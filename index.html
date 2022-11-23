@@ -92,41 +92,64 @@
 </section>
 <hr></hr>
 <!--Skills Container -->
-
-<div>
-    <h1 class="mb-5 mt-5"> Linear Progress Bar</h1>
-</div>
+<style>
+  .progress-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c2647;
+    margin: 0 0 10px;
+}
+.progress{
+    height: 30px;
+    background: #fff;
+    border-top: 5px solid #1c2647;
+    border-bottom: 5px solid #1c2647;
+    border-radius: 0;
+    margin-bottom: 25px;
+    overflow: visible;
+    position: relative;
+}
+.progress:before,
+.progress:after{
+    content: "";
+    width: 5px;
+    background: #1c2647;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    bottom: 0;
+}
+.progress:after{
+    left: auto;
+    right: -5px;
+}
+.progress .progress-bar{
+    border: none;
+    box-shadow: none;
+    -webkit-animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+    animation: 2s linear 0s normal none infinite running progress-bar-stripes,animate-positive 1s;
+}
+@-webkit-keyframes animate-positive{
+    0%{ width: 0; }
+}
+@keyframes animate-positive{
+    0%{ width: 0; }
+}
+</style>
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h3 class="progress-title">HTML</h3>
+        <div class="col-md-6">
+            <h3 class="progress-title">HTML5 - 60%</h3>
             <div class="progress">
-                <div class="progress-bar" style="width:65%; background:#97c513;">
-                    <div class="progress-value">65%</div>
-                </div>
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:60%;"></div>
             </div>
-            <h3 class="progress-title">CSS</h3>
+            <h3 class="progress-title">CSS3 - 90%</h3>
             <div class="progress">
-                <div class="progress-bar" style="width:100%; background:#f2545b;">
-                    <div class="progress-value">100%</div>
-                </div>
-            </div>
-            <h3 class="progress-title">JAVASCRIPT</h3>
-            <div class="progress">
-                <div class="progress-bar" style="width:75%; background:#4286f4;">
-                    <div class="progress-value">75%</div>
-                </div>
-            </div>
-            <h3 class="progress-title">BOOTSTRAP</h3>
-            <div class="progress">
-                <div class="progress-bar" style="width:30%; background:#21ff63;">
-                    <div class="progress-value">30%</div>
-                </div>
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width:90%;"></div>
             </div>
         </div>
     </div>
 </div>
-
 <!---- Footer --->
 <div class="container-fluid bg-grey">
   <h2 class="text-center">CONTACT ME</h2>
