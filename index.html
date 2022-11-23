@@ -1,69 +1,60 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>New Site Under Construction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<h2>New Site Under Construction</h2>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-mbd-toggle="collapse"
-              data-mdb-target="#navbarToggleExternalContent2" aria-controls="navbarToggleExternalContent2"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
       </button>
+      <a class="navbar-brand" href="#">Carrie's Portfolio Site</a>
     </div>
-  </nav>
-  <div class="collapse" id="navbarToggleExternalContent2">
-    <div class="bg-light shadow-3 p-4">
-      <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
-      <button class="btn btn-link btn-block border-bottom m-0">Link 3</button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#About">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Certificates</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Coding Sites<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.kaggle.com/carrie535">Kaggle</a></li>
+            <li><a href="https://codepen.io/CarrieW53">Codepen</a></li>
+            <li><a href="https://github.com/CW53">Github</a></li>
+          </ul>
+          <li><a href="https://www.linkedin.com/in/carrie-williams-29b79785/">LinkedIn</a></li>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
   </div>
-                                              
-<section id="about"
+</nav>
+  
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <section id="about"
 <p>I am a data scientist with a passion for teasing out visual stories from a dataset and questioning results after every finding. I am trying to <b> be a different kind of data scientist</b> because my ultimate goal is to become a geopolitical analysst who connects regional expertise with the power of data</p>
 <p> Most of my time is spent staring at a computer and questioning everything. Outside of work, I like to volunteer at my local animal shelter by working with dogs, in addition, I appreciate what a good sweat can do for the mind and body. I have an eclectic mix of interests, but the top themes can be boiled down to: real estate, animal welfare, the stock market, and ecommerce.</p>
 <p>My skills include <b> data analysis, data visualization, and machine learning, particularly as it pertains to time series forecasting/predictive analytics. </b></p>
 <p>Other Pages will be redirected to, making it easier to put them into subsections</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
 </section>
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#About">About Me</a>
-    <a href="#">Projects</a>
-    <a href="#">Certificates</a>
-    <a href="https://github.com/CW53">Github</a>
-    <a href="https://www.kaggle.com/carrie535">Kaggle</a>
-    <a href="https://codepen.io/CarrieW53">Codepen</a>
-    <a href="https://www.linkedin.com/in/carrie-williams-29b79785/">LinkedIn</a>
-  </div>
 </div>
-<div class="site-mobile-menu site-navbar-target">
-<div class="site-mobile-menu-header">
-<div class="site-mobile-menu-close">
-<span class="icofont-close js-menu-toggle">
-</span>
-</div>
-</div>
-<div class="site-mobile-menu-body">
-<ul class="site-nav-wrap">
-<li><a href="home" class="nav-link active">Home</a></li>
-<li><a href="me" class="nav-link active">Me</a></li>
-<li><a href="contactme" class="nav-link active">Contact Me</a></li>
-</ul>
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
-
-  </body>
+</body>
 </html>
+
+
