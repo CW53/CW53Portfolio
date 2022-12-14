@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+
+<body>
 <html lang="en">
 <head>
   <title>Carrie's Portfolio Site</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
@@ -26,18 +29,19 @@
         <li><a href="#Projects">Projects</a></li>
         <li><a href="#Certificates">Certificates</a></li>
         <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Coding Sites<span class="caret"></span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Coding Sites<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="https://www.kaggle.com/carrie535">Kaggle</a></li>
             <li><a href="https://codepen.io/CarrieW53">Codepen</a></li>
             <li><a href="https://github.com/CW53">Github</a></li>
+            <li><a href="https://public.tableau.com/app/profile/carrie7212">Tableau Public</a></li>
           </ul>
           <li><a href="https://www.linkedin.com/in/carrie-williams-29b79785/">LinkedIn</a></li>
         </li>
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="ContactMe"><span class="glyphicon glyphicon-user"></span> Contact Me</a></li>
+        <li><a href="#ContactMe"><span class="glyphicon glyphicon-user"></span> Contact Me</a></li>
         
       </ul>
     </div>
@@ -45,12 +49,12 @@
 </nav>
   
 <div class="container">
-  <h3>New Site Under Construction</h3>
-  <h2> <i>Expected to take a few weeks </i></h2>
-  <p> Last updated: 12/12/2022. Testing taking place in codepen</p>
-  <h4> Who am I? </h4>
+  <h3>New Site Under Construction. Last updated: 12/14/2022</h3>
+  <h2> <i>Who am I?</i></h2>
+  
+  
   <section id="About">
-<p>I am a data scientist with a passion for teasing out visual stories from a dataset and questioning results after every finding. I am trying to <b> be a different kind of data scientist</b> because my ultimate goal is to become a geopolitical analysst who connects regional expertise with the power of data</p>
+<p>I am a data scientist with a passion for teasing out visual stories from a dataset and questioning results after every finding. I am trying to <b> be a different kind of data scientist</b> because my ultimate goal is to become a geopolitical analysst who connects regional expertise with the power of data.</p>
 <p> Most of my time is spent staring at a computer and questioning everything. Outside of work, I like to volunteer at my local animal shelter by working with dogs, in addition, I appreciate what a good sweat can do for the mind and body. I have an eclectic mix of interests, but the top themes can be boiled down to: real estate, animal welfare, the stock market, and ecommerce.</p>
 <p>My skills include <b> data analysis, data visualization, and machine learning, particularly as it pertains to time series forecasting/predictive analytics. </b></p>
 </section>
@@ -100,50 +104,126 @@
 </div>
 </div>
 <hr></hr>
+  
+  <!---Timeline carousel, used for 'Next Projects' is thanks to : https://www.bootdey.com/snippets/view/bs4-Horizontal-timeline#html --->
+  <div class="container">
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="body">
+                <div class="cd-horizontal-timeline loaded">
+                    <div class="timeline">
+                        <div class="events-wrapper">
+                            <div class="events" style="width: 1800px;">
+                                <ol>
+                                    <li><a href="#0" data-date="2/2/2023" class="older-event" style="left: 120px;">Feb 2023</a></li>
+                                    <li><a href="#0" data-date="14/02/2023" style="left: 300px;" class="older-event">Feb 2023</a></li>
+                                    <li><a href="#0" data-date="28/02/2023" style="left: 290px;" class="selected">Feb 2023</a></li>
+                                    <li><a href="#0" data-date="03/03/2023"style="left: 400px;">Early March 2023</a></li>
+                                    <li><a href="#0" data-date="15/03/2023" style="left: 780px;">Mid March 2023</a></li>
+                                    <li><a href="#0" data-date="31/03/2023" style="left: 600px;"> Late March 2023</a></li>
+                                </ol>
+                                <span class="filling-line" aria-hidden="true" style="transform: scaleX(0.281506);"></span>
+                            </div>
+                            <!-- .events -->
+                        </div>
+                        <!-- .events-wrapper -->
+                        <ul class="cd-timeline-navigation">
+                            <li><a href="#0" class="prev inactive">Prev</a></li>
+                            <li><a href="#0" class="next">Next</a></li>
+                        </ul>
+                        <!-- .cd-timeline-navigation -->
+                    </div>
+                    <!-- .timeline -->
+                    <div class="events-content" style="height: 225px;">
+                        <ol>
+                            <li class="" data-date="2/2/2023">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/icons/32/PNG/32/bookshelf.png"> Next Projects on Deck<br>
+                                            <small>Entertainment</small>
+                                        </h4>
+                                <hr>
+                                <p>Can I recommend a book for you?
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            <li data-date="14/02/2023" class="">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/icons/32/PNG/32/cloud-refresh.png"> Next Project on Deck<br>
+                                            <small>Animal Welfare</small>
+                                        </h4>
+                                <hr>
+                                <p>A refinement on the project above
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            <li data-date="28/02/2023" class="selected">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/icons/32/PNG/32/map.png"> Next Projects on Deck<br>
+                                            <small>Real Estate</small>
+                                        </h4>
+                                <hr>
+                                <p>What is the next hot neighbor to buy property in?
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            <li data-date="03/03/2023">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/flores-amarillas-wallpaper.jpeg"> Project Ideas<br>
+                                            <small>Raising kids</small>
+                                        </h4>
+                                <hr>
+                                <p>Does it cost more to raise a boy or a girl in the United States from infancy to 18? Assumption is that girls will cost more because of the pink tax. The pink tax refers to the tendency for products marketed to women to be more expensive than those marketed to men
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            <li data-date="15/03/2023">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/icons/32/PNG/32/packman.png"> Project Ideas<br>
+                                            <small>Unknown</small>
+                                        </h4>
+                                <hr>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors infancy.
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            <li data-date="31/03/2023">
+                                <h4>
+                                            <img class="rounded float-left m-r-15" width="40" alt="user" src="https://www.bootdey.com/app/webroot/img/Content/icons/32/PNG/32/calc.png"> Project Ideas<br>
+                                            <small>Unknown</small>
+                                        </h4>
+                                <hr>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors infancy.
+                                    <br>
+                                    <button class="btn btn-primary btn-round">Read more</button>
+                                </p>
+                            </li>
+                            
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 
-<!--- Projects on Deck ---->
-  <!---- Source for both of these timelines are from bootdey.com  and bootsnipp.com(andrewnite), respectively -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-  <section class="timeline_area section_padding_130">
-    <div class="container">
-         <div class="row justify-content-center">
-           <div class="col-12 col-sm-8 col-lg-6">
-             <div class-"section_heading text-center">
-<h3> <b>Projects on Deck</b></h3>
-               <div class="line"></div>
-               <div class="row"
-                    div class="col-12">
-                 <!---Timeline area -->
-                 <div class="apland-timeline-area">
-                   <!---single timeline-->
-                   <div class="apland-timeline-area">
-                     <div class="timeline-date wow fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
-                     <p>Near Future (by end of February 2023)</p>
-                     </div>
-                     <div class="row">
-                          <div class="col-12 col-md-6 col-lg-4">
-                            <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay:0.3s; animation-name: fadeInLeft;">
-                              <div class="timeline-icon"><i class="bi bi-house-door-fill" aria-hidden="true">
-                                </i></div>
-                              <div class="timeline-text">
-<h4> Does it cost more to raise a boy or a girl in the United States? From infancy to 18 </h4>
-<p> Assumption is that girls will cost more because of the pink tax. The pink tax refers to the tendency for products marketed to women to be more expensive than those marketed to men </p>
-                              </div>
-                              </div>
-                       </div>
-<h4>Animal Surrenders vs Animal Adoptions </h4>
-<p> A refinement of my current project, see above </p>
 
-<h4>Other</h4>
-  <p> Project focused on real estate, retail, investments, or entertainment </p>
 
-</section>
 
 <hr></hr>
 <!--- Certificates Container -->
-<sectio id="Certificates">
+<section id="Certificates">
+ 
 <div class="demo">
     <div class="container">
+       <h3> Certificates </h3>
         <div class="row">
             <div class="col-md-6">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -157,7 +237,7 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                              <p><li> Intro to Data Science </li> </p>
                             </div>
                         </div>
                     </div>
@@ -171,33 +251,55 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                              <p><li> Learn Recommender Systems</li></p>
+                              <p><li> Machine Learning: Introduction with Regression</li></p>
+                              <p><li> Machine Learning: k-Nearest Neighbors</li></p>
+                              <p><li> Potential Outcomes Framework for Causal Inference</li></p>
+                              <p><li> Probability</li></p>
+                              <p><li> Analyze Business Data with SQL</li></p>
+                              <p><li> Language Parsing</li></p>
+                              <p><li> Analyze Financial Data with Python</li></p>
                             </div>
                         </div>
                     </div>
-                    <div class="panel panel-default">
+                    
+                  <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    General Assembly
+                                   General Assembly
                                 </a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent nisl lorem, dictum id pellentesque at, vestibulum ut arcu. Curabitur erat libero, egestas eu tincidunt ac, rutrum ac justo. Vivamus condimentum laoreet lectus, blandit posuere tortor aliquam vitae. Curabitur molestie eros. </p>
+                                <p><li> Python Programming</li></p>
+                              <p><li> Data Analytics </li></p>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Kaggle
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                              <p><li> Intro to Geospatial Analysis</li></p>
+                              <p><li> Intro to Time Series </li></p>
+                              <p><li> Intro to Machine Learning</li></p>
+                              <p><li> Machine Learning Explainability</li></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-  </section>
-<!--- Skills Container ---->
-  <hr></hr>
-<div class="container">
+          
+          <!---Skills --->
+          <div class="container">
   <h3>My Skills: </h5>
   <ul class="list-inline"> 
     <li> 1 - Basic </li> 
@@ -206,21 +308,47 @@
     <li> 4 - Advanced </li>
     <li> 5 - Expert </li>
   </ul>
-  <p> Hover cursor over bars for more information </p>
+  <div class="container">
     <div class="row">
-        <div class="col-md-6">
-            <h3 class="progress-title">HTML - 3</h3>
+        <div class="col-sm-3">
+            <h3 class="progress-title">HTML, CSS, Bootstrap JS - 3</h3>
             <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar active" style="width:60%;"></div>
-            </div>
-            <h3 class="progress-title">CSS - 3</h3>
-          <li><a href="#" data-toggle="tooltip" data-placement="right" title="2 years"></a></li>
+                <div class="progress-bar" style="width:60%;"></div>
+              
+           
+      </div>
+            <h3 class="progress-title">Microsoft PowerBI - 5</h3>
+          <div class="progress">
             <div class="progress">
-                <div class="progress-bar progress-bar-info progress-bar active" style="width:60%;"></div>
+                <div class="progress-bar" style="width:100%;"></div>
+             
             </div>
-        </div>
+      </div>
+              <h3 class="progress-title">Python - 5</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width:100%;"></div>
+              
+      </div>
+    </div>
+              <h3 class="progress-title">Tableau - 4</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width:80%;"></div>
+              </div>
+      <h3 class="progress-title">Statistical Analysis - 5</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width:100%;"></div>
+      </div>
+             <h3 class="progress-title">Machine Learning- 4</h3>
+            <div class="progress">
+                <div class="progress-bar" style="width:80%;"></div>
     </div>
 </div>
+  </section>
+
+<!--Skills Container -->
+
+  <hr></hr>
+
 <!---- Footer --->
 <section id="ContactMe">
 <div class="container-fluid bg-grey">
